@@ -2,17 +2,16 @@ import java.util.Scanner;
 
 public class EjerciciosCondicionalesII {
 
-	private static final int MAX_LENGHT = 0;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//EjerciciosCondicionalesII.escribeReves();
-		EjerciciosCondicionalesII.escribeTextoNum();
-		EjerciciosCondicionalesII.getDiasEntreFechas();
+		//EjerciciosCondicionalesII.escribeTextoNum();
+		//EjerciciosCondicionalesII.getDiasEntreFechas();
 		//EjerciciosCondicionalesII.getMayor();
 		//EjerciciosCondicionalesII.getNumCifras();
 		//EjerciciosCondicionalesII.getSigDia();
 		//EjerciciosCondicionalesII.getSigDiaSimple();
-		EjerciciosCondicionalesII.getSigSeg();
+		//EjerciciosCondicionalesII.getSigSeg();
 		//EjerciciosCondicionalesII.isCapicua();
 		//EjerciciosCondicionalesII.isFechaOK();
 		//EjerciciosCondicionalesII.isIgual();
@@ -451,7 +450,96 @@ public class EjerciciosCondicionalesII {
 	}
 	public static void escribeTextoNum(){
 		//escribeTextoNum():Pedir un número de 0 a 99 y mostrarlo escrito. Por ejemplo, para 46 mostrar: cuarenta y seis.
+		int num;
+		int unidades, decenas;
+		Scanner sc=new Scanner (System.in);
+		do{
+			System.out.println("Introduzca un numero de dos digitos: ");
+			num=sc.nextInt();
+		}while (!(num<100));
 		
+		unidades=num%10;
+		decenas=num/10;
+		
+		switch (decenas){
+		case 0:
+			System.out.print("");break;
+		case 1:
+			if(decenas==1&&unidades==2){
+				System.out.print ("Doce");
+			
+			}
+			else{
+				System.out.print ("Diez");
+			}
+			break;
+		case 2:
+			System.out.print("Veinte");break;
+		case 3:
+			System.out.print("Treinta");break;
+
+		case 4:
+			System.out.print("Cuarenta");break;
+		case 5:
+			System.out.print("Cincuenta");break;
+		case 6:
+			System.out.print("Sesenta");break;
+		case 7:
+			System.out.print("Setenta");break;
+		case 8:
+			System.out.print("Ochenta");break;
+		case 9:
+			System.out.print("Noventa");break;
+		}
+		
+		
+			if (unidades==0){
+				System.out.print ("");
+			}
+			else if(unidades==2&&decenas==1){
+				System.out.print ("");
+
+			}
+			else{
+				System.out.print (" y");
+			}
+			
+			
+		switch (unidades){
+		case 0:
+			System.out.print("");break;
+		case 1:
+			System.out.print(" uno");break;
+
+		case 2:
+			if(decenas==1&&unidades==2){
+				System.out.print ("");
+			}
+			else{System.out.print(" dos");break;
+			}break;
+		case 3:
+			System.out.print(" tres");break;
+
+		case 4:
+			System.out.print(" cuatro");break;
+
+		case 5:
+			System.out.print("cinco");break;
+
+		case 6:
+			System.out.print(" seis");break;
+
+		case 7:
+			System.out.print(" siete");break;
+
+		case 8:
+			System.out.print(" ocho");break;
+		case 9:
+			System.out.print(" nueve");break;
+
+
+		}
 		
 	}
 }
+

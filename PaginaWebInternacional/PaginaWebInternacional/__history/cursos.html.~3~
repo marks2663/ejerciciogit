@@ -1,0 +1,57 @@
+<html>
+<head >
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body >
+<div id="contenido">
+
+	<div id="encabezado">
+	
+		<div id="imagen"><img src="imagen/logo_inter.jpg" width="100" height="141"></div>
+		<div id="titulo"><h1>Internacional de Intxaurrondo</h1></div>
+	</div>
+	
+	<div id="menu">
+		<ul>
+  		<a href="index.html"><li>Inicio</li></a>
+  			<a href="cursos.html"><li>Cursos</li></a>
+  			<a href="equipos.html"><li>Equipos</li></a>
+  			<a href="instalaciones.html"><li>Instalaciones</li></a>
+  			<a href="contacto.html"><li>Contacto</li></a>
+		</ul>
+	</div>
+	
+	<div id="fotos">
+
+		<marquee direction="left"  scrollamount="4" scrolldelay="85">
+		<img src="imagen/futbolsala1-800x240.jpg" width="800" height="240">
+		<img src="imagen/futbol1-800x240.jpg" width="800" height="240">
+		<img src="imagen/futbolsala4-800x240.jpg" width="800" height="240">
+		</marquee>
+	</div>
+	
+	<div id="texto">
+		<div id="imgtxt">
+			<img src="imagen/4146016291_6bfffc130c_o.jpg" width="950" height="632">
+			</div>
+			<div id="txt">
+				<h1>Disfruta cómodamente desde tu casa de una excelente formación deportiva.</h1>
+				<p>Con los Cursos de Formación Específica a Distancia de Sportis disfrutarás de 
+				una excelente formación en el ámbito de las Ciencias del Deporte. Numerosos profesores
+				doctores de distintas universidades españolas y reconocidos profesionales del Deporte
+				de nivel internacional colaboran con nuestra entidad para ofrecerte un magnífico
+				material didáctico que contribuirá a tu mejor desempeño profesional, proporcionándote 
+				una formación sólida y de máxima calidad. </p>
+				   
+				<p>En menos de 48 horas recibirás en tu domicilio todo el material didáctico del curso junto con las claves de acceso a nuestra aula virtual. Además te obsequiaremos con una excelente camiseta técnica para que utilices durante tu labor profesional.</p>
+			<p>Todos nuestros cursos a distancia se engloban dentro del ámbito de la formación no reglada y están certificados con200 horas de duración, siendo baremarles para concursos de oposiciones al cuerpo docente. Recuerda que nuestros cursos están pensados para completar y complementar tu formación en el ámbito de las Ciencias del Deporte y la Educación Física, y nunca se deben entender como un sustituto o alternativa a la formación oficial ofrecida por universidades y ciclos de formación profesional. La formación no reglada no posee validez académica pero si ofrece la posibilidad a todas las personas que poseen una titulación oficial a ampliar su conocimientos y actualizar y reciclar los aprendizajes adquiridos en la formación oficial inicial. Si tienes dudas sobre qué curso elegir, lee nuestro artículo ¿Cómo elegir bien un Curso de Formación?</p>
+			<p>Descubre a través de la Guía del Alumno toda nuestra filosofía de trabajo en los Cursos de Formación Específica a Distancia.</p>
+			
+			</div>
+	</div>
+	
+
+</div>
+</body>
+
+</html>
