@@ -15,7 +15,7 @@ public class EjerciciosCondicionalesII {
 		//EjerciciosCondicionalesII.isCapicua();
 		//EjerciciosCondicionalesII.isFechaOK();
 		//EjerciciosCondicionalesII.isIgual();
-		//EjerciciosCondicionalesII.ordenaNum();
+		EjerciciosCondicionalesII.ordenaNum();
 	}
 	//********************* Ejercicios condicionales II *******************
 	//LOS EJERCICIOS QUE USAS FECHAS NO UTILIZAR LAS CLASES ESPECIFICAS DE JAVA
@@ -76,36 +76,31 @@ public class EjerciciosCondicionalesII {
 		if(num1>=num2){
 			if(num1>=num3){
 				if(num3>=num2){
-					System.out.println(num1+" => "+ num3+" => "+num2);
+					System.out.println(num1+" > "+ num3+" > "+num2);
 				}
 				else{
-					System.out.println(num1+ " => "+num2+" => "+num3);
+					System.out.println(num1+ " > "+num2+" > "+num3);
 				}
 			}
 			
 			else{
-				System.out.println(num3+" => "+num1+" => "+num2);
+				System.out.println(num3+" > "+num1+" > "+num2);
 			}//num3>num1
 			
 		}
 		else if(num2>=num1){
 				if (num2>=num3){
 					if(num3>=num1){
-						System.out.println(num2+" => "+ num3+" => "+num1);
+						System.out.println(num2+" > "+ num3+" > "+num1);
 					}
 					else{
-						System.out.println(num2+" => "+ num1+" => "+num3);
+						System.out.println(num2+" > "+ num1+" > "+num3);
 					}
 				}
 				else{
-					System.out.println(num3+" => "+num2+" => "+num1);
-				}
-				
+					System.out.println(num3+" > "+num2+" > "+num1);
+				}		
 		}
-		
-		
-		
-		
 	}
 	
 	
@@ -121,7 +116,7 @@ public class EjerciciosCondicionalesII {
 			num=sc.nextInt();
 			length = String.valueOf(num).length();
 		}while (length>MAX_LENGTH);
-		System.out.println("El número introducido tiene: "+length);
+		System.out.println("El número introducido tiene: "+length+" cifras.");
 	}
 		
 	public static void escribeReves(){
@@ -238,7 +233,8 @@ public class EjerciciosCondicionalesII {
 				else{
 					System.out.println("La fecha introducida es incorrecta");
 				}break;
-				
+			default:
+				System.out.println("La fecha introducida es incorrecta");break;
 			
 			}
 		}
@@ -302,7 +298,7 @@ public class EjerciciosCondicionalesII {
 		final int AGNO_MAX_LENGHT=4;
 
 		Scanner sc=new Scanner(System.in);
-		
+				
 		System.out.println("Introduzca el dia: ");
 		dia=sc.nextInt();
 		
@@ -311,7 +307,6 @@ public class EjerciciosCondicionalesII {
 		
 		System.out.println("Introduzca el año: ");
 		agno=sc.nextInt();
-		lenghtAgno=String.valueOf(agno).length();
 		
 		if(dia>=1&&dia<=31){
 			switch (mes){
@@ -372,8 +367,8 @@ public class EjerciciosCondicionalesII {
 				else{
 					System.out.println("La fecha introducida es incorrecta");
 				}break;
-				
-			
+			default:
+				System.out.println("La fecha introducida es incorrecta");break;
 			}
 		}
 		else{
@@ -435,13 +430,13 @@ public class EjerciciosCondicionalesII {
 		
 		s++;
 		
-		if (s>=59){
+		if (s>59){
 		s=0;
 		m ++;
-			if (m>=59){
+			if (m>59){
 				m=0;
 				h ++;
-				if(h>=24){
+				if(h>24){
 					h=0;
 				}
 			}
@@ -465,12 +460,37 @@ public class EjerciciosCondicionalesII {
 		case 0:
 			System.out.print("");break;
 		case 1:
-			if(decenas==1&&unidades==2){
-				System.out.print ("Doce");
-			
-			}
-			else{
-				System.out.print ("Diez");
+			switch(unidades){
+			case 0:
+				System.out.print("Diez");
+				break;
+			case 1:
+				System.out.print("Once");
+				break;
+			case 2:
+				System.out.print("Doce");
+				break;
+			case 3:
+				System.out.print("Trece");
+				break;
+			case 4:
+				System.out.print("Catorce");
+				break;
+			case 5:
+				System.out.print("Quince");
+				break;
+			case 6:
+				System.out.print("Dieciseis");
+				break;
+			case 7:
+				System.out.print("Diecisiete");
+				break;
+			case 8:
+				System.out.print("Dieciocho");
+				break;
+			case 9:
+				System.out.print("Diecinueve");
+				break;
 			}
 			break;
 		case 2:
@@ -496,10 +516,14 @@ public class EjerciciosCondicionalesII {
 			if (unidades==0){
 				System.out.print ("");
 			}
-			else if(unidades==2&&decenas==1){
+			else if(decenas==1){
 				System.out.print ("");
-
 			}
+			
+			else if(decenas==0){
+				System.out.print ("");
+			}
+		
 			else{
 				System.out.print (" y");
 			}
@@ -509,33 +533,65 @@ public class EjerciciosCondicionalesII {
 		case 0:
 			System.out.print("");break;
 		case 1:
-			System.out.print(" uno");break;
+			if(decenas==1){
+				System.out.print ("");
+			}else{
+				System.out.print(" uno");break;
+			}
 
 		case 2:
-			if(decenas==1&&unidades==2){
+			if(decenas==1){
 				System.out.print ("");
 			}
 			else{System.out.print(" dos");break;
 			}break;
 		case 3:
-			System.out.print(" tres");break;
+			if(decenas==1){
+				System.out.print ("");
+			}else{
+				System.out.print(" tres");break;
+			}
 
 		case 4:
-			System.out.print(" cuatro");break;
+			if(decenas==1){
+				System.out.print ("");
+			}else{
+				System.out.print(" cuatro");break;
+			}
 
 		case 5:
-			System.out.print("cinco");break;
+			if(decenas==1){
+				System.out.print ("");
+			}else{
+				System.out.print(" cinco");break;
+			}
 
 		case 6:
-			System.out.print(" seis");break;
+			if(decenas==1){
+				System.out.print ("");
+			}else{
+				System.out.print(" seis");break;
+			}
 
 		case 7:
-			System.out.print(" siete");break;
+			if(decenas==1){
+				System.out.print ("");
+			}else{
+				System.out.print(" siete");break;
+			}
 
 		case 8:
-			System.out.print(" ocho");break;
+			if(decenas==1){
+				System.out.print ("");
+			}else{
+				System.out.print(" ocho");break;
+			}
 		case 9:
-			System.out.print(" nueve");break;
+			if(decenas==1){
+				System.out.print ("");
+			}else{
+				System.out.print(" nueve");break;
+			}
 
 
 		}
