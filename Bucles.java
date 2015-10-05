@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class Bucles {
 
 	public static void main(String[] args) {
-		buclesfor();
+	//	buclesfor();
 		buclesWhile();
+		//pruebaFor();
 	}
 
 	public static void buclesfor(){
@@ -41,10 +42,51 @@ public class Bucles {
 			for (int i=0;i<=num;i++){
 				System.out.println(i);
 			}
+			sc.close();
+			
+			//prueba for
+			
+			int num1,suma;
+			
+			suma=0;
+			for (int i=0; i<10;i++){
+			System.out.println("Introduzca numero:");
+			num1=sc.nextInt();
+			suma=suma+num1;
+			}
+			System.out.println("La suma es: " +suma);
+	}
+	public static void pruebaFor(){
+		/**
+		 * WHILE
+		 */
+		int num1,suma;
+		Scanner sc=new Scanner(System.in);
+
+		suma=0;
+		for (int i=0; i<10;i++){
+		System.out.println("Introduzca numero:");
+		num1=sc.nextInt();
+		suma=suma+num1;
+		}
+		System.out.println("La suma es: " +suma);
 	}
 	public static void buclesWhile(){
 		/**
 		 * WHILE
 		 */
+		int num1,suma;
+		Scanner sc=new Scanner(System.in);
+
+		suma=0;
+		int contador=0;
+		System.out.println("Cuantos nº quieres sumar?:");
+		contador=sc.nextInt();
+		for (int i=0; i<contador;i++){
+		System.out.println("Introduzca numero:");
+		num1=sc.nextInt();
+		suma=suma+num1;
+		}
+		System.out.println("La suma es: " +suma);
 	}
 }

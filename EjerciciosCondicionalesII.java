@@ -422,7 +422,32 @@ public class EjerciciosCondicionalesII {
 	public static void getSigSeg(){
 		//getSigSeg():Pedir una hora de la forma hora, minutos y segundos, y mostrar la hora en el segundo siguiente.
 		
+		Scanner sc=new Scanner(System.in);
+		int h;
+		int m;
+		int s;
 		
+		System.out.println("Introduzca una hora: ");
+		h=sc.nextInt();
+		System.out.println("Introduzca un minuto: ");
+		m=sc.nextInt();
+		System.out.println("Introduzca un segundo");
+		s=sc.nextInt();
+		
+		s++;
+		
+		if (s>=59){
+		s=0;
+		m ++;
+			if (m>=59){
+				m=0;
+				h ++;
+				if(h>=24){
+					h=0;
+				}
+			}
+		}
+		System.out.println("Fecha: "+h+":"+m+":"+s);
 	}
 	public static void escribeTextoNum(){
 		//escribeTextoNum():Pedir un número de 0 a 99 y mostrarlo escrito. Por ejemplo, para 46 mostrar: cuarenta y seis.
