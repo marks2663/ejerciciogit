@@ -4,18 +4,18 @@ public class EjerciciosBuclesI {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		//asteristic();
 		//numAster();
 		//numAsc();
 		//numAscNNeg();
 		//entPos();
 		//dosNum();
-		cuadrado();
+		//cuadrado();
+		//cuadr2();
+		//numCero();
+		//sumaNum();
 		
-		//mejora el programa anterior solicitando un número y el carácter con el que vas a dibujar el cuadrado
-
-		//solicita números hasta que se introduzca un cero, muestra como resultado la cantidad de enteros introducida.
-		//solicita números hasta que se introduzca un cero, muestra como resultado la suma de los números introducidos.
 	}
 	public static void asteristic(){
 		//dibujar 10 asteriscos
@@ -51,12 +51,12 @@ public class EjerciciosBuclesI {
 		do{
 		System.out.println("\nIntroduzca un numero: ");
 		num=sc.nextInt();
-			if (num<0){
-				System.out.println("No introduzca negativos");
+			if (!(num>=0)){
+				System.out.println("No se admiten números negativos.");
 			}
 		}while (!(num>=0));
 		
-		for (int i=0;num>=0&&i<=num;i++){
+		for (int i=0;i<=num;i++){
 			System.out.print(i+" ");
 		}
 	}
@@ -67,12 +67,10 @@ public class EjerciciosBuclesI {
 		do{
 		System.out.println("\nIntroduzca un numero: ");
 		num=sc.nextInt();
-			if (num<0){
-				System.out.println("No introduzca negativos");
-			}
+		
 		}while (!(num>=0));
 			
-		for (int i=0;num>=0&&i<=num;i++){
+		for (int i=0;i<=num;i++){
 			System.out.print(i+" ");
 		}
 	}
@@ -118,8 +116,59 @@ public class EjerciciosBuclesI {
 		}
  
 	}
+	public static void cuadr2(){
+		//mejora el programa anterior solicitando un número y el carácter con el que vas a dibujar el cuadrado
+		
+		Scanner sc=new Scanner(System.in);
+		char car;
+		int lineas;
+		System.out.println("Introduzca el tamaño del lado de un cuadrado: ");
+		lineas=sc.nextInt();
+		System.out.println("Introduzca un caracter: ");
+		car=sc.next().charAt(0);
+		
+		for(int i=0;i<lineas;i++){			//saltos de linea
+			
+			for(int j=0;j<lineas;j++){		//lineas+caracter
+				
+				System.out.print(car+" ");
+			}
+			
+		System.out.print("\n");
+		
+		}
+		
+	}
+	public static void numCero(){
+		//solicita números hasta que se introduzca un cero, muestra como resultado la cantidad de enteros introducida.
+		Scanner sc=new Scanner(System.in);
+		int numIntr;
+		int num = 0;
+		
+		do {
+			System.out.println("Introduzca un numero: ");
+			numIntr=sc.nextInt();
+			if (numIntr!=num){
+				System.out.println("Número introducido incorrecto");
+			}
+		}while(numIntr!=num);
+		
+		System.out.println("Número introducido correcto");
+		
+		System.out.println("----------------------Fin---------------------------");
+	}
+	public static void sumaNum(){
+		//solicita números hasta que se introduzca un cero, muestra como resultado la suma de los números introducidos.
+		Scanner sc=new Scanner(System.in);
+		int numIntr;
+		int num = 0;
+		int suma=0;
+		do {
+			System.out.println("Introduzca un numero: ");
+			numIntr=sc.nextInt();
+			suma=suma+numIntr;
+		}while(numIntr!=num);
+		System.out.println("La suma de los numeros introducidos es: "+ suma);
+	}
 	
-	
-	
-
 }
