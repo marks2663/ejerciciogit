@@ -9,7 +9,8 @@ public class EjerciciosBuclesII {
 		//producto10();
 		//factorial();
 		//sueldos();
-		numMayMen();
+		//numMayMen();
+		tablaMulti();
 	}
 	
 	public static void siete7(){
@@ -68,25 +69,26 @@ public class EjerciciosBuclesII {
 		int menor=Integer.MAX_VALUE;
 		int media;
 		int suma=0;
-		int cont=10;
-		do{
-			System.out.println("Introduzca un numero: ");
-			num=sc.nextInt();
-			if (num<mayor){
-				mayor=num;
-			}
-			else if(num>menor){
+		
+		for (int i=1;i<10;i++){
+		System.out.println("Introduzca un numero: ");
+		num=sc.nextInt();
+			if(num<menor){
 				menor=num;
 			}
-			cont --;
+			if (num>mayor){
+				mayor=num;
+			}
 			suma=suma+num;
-		}while (cont>0);
+		}
 		media=suma/10;
 		System.out.println("El numero mayor es: "+mayor);
-		
+		System.out.println("El numero menor es: "+menor);
+		System.out.println("La media de la suma es: "+ media);		
 	}
-
-	//Pide un número entre 1 y 10 y muestra su tabla de multiplicar.
+	public static void tablaMulti(){
+		//Pide un número entre 1 y 10 y muestra su tabla de multiplicar.
+	}
 
 
 	//Pide 6 notas y muestra cuantos han aprobado y cuantos han suspendido.
