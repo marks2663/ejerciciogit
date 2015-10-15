@@ -10,7 +10,11 @@ public class EjerciciosBuclesII {
 		//factorial();
 		//sueldos();
 		//numMayMen();
-		tablaMulti();
+		//tablaMulti();
+		//notas();
+		//numero6();
+		//tablamulti();
+		numAleatorio();
 	}
 	
 	public static void siete7(){
@@ -88,14 +92,90 @@ public class EjerciciosBuclesII {
 	}
 	public static void tablaMulti(){
 		//Pide un número entre 1 y 10 y muestra su tabla de multiplicar.
+		int num;
+		int producto;
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Introduzca un numero del 1 al 10: ");
+		num=sc.nextInt();
+		for (int i=1;i<=10;i++){
+			producto=num*i;
+			System.out.println(num +" x "+i +" = "+producto);
+		}
 	}
 
 
-	//Pide 6 notas y muestra cuantos han aprobado y cuantos han suspendido.
+	public static void notas(){
+		//Pide 6 notas y muestra cuantos han aprobado y cuantos han suspendido.
+		int nota;
+		int suspe=0;
+		int aprob=0;
+		Scanner sc=new Scanner (System.in);
+		for (int i=1;i<=6;i++){
+			System.out.println("Introduzca nota: ");
+			nota=sc.nextInt();
+			if (nota<5){
+				suspe++;
+			}
+			if (nota>=5){
+				aprob++;
+			}
+		}
+		System.out.println("Han aprobado "+aprob+" personas.");
+		System.out.println("Han suspendido "+suspe+" personas.");
+		
+	}
 
-	//Pide 6 número y muestra si ha habido algún suspenso.
+	public static void numero6(){
+		//Pide 6 número y muestra si ha habido algún suspenso.
+		int nota;
+		int suspe=0;
+	
+		Scanner sc=new Scanner (System.in);
+		for (int i=1;i<=6;i++){
+			System.out.println("Introduzca nota: ");
+			nota=sc.nextInt();
+			if (nota<5){
+				suspe++;
+			}
+		}
+	
+		System.out.println("Han suspendido "+suspe+" personas.");
+		
+	}
 
-	//Muestra las tablas de multiplicar del 1 al 10.
-
-	//Calcula un número entre el 1 y el 10 aleatoriamente, el usuario tendrá tres intentos para acertar.
+	public static void tablamulti(){
+		//Muestra las tablas de multiplicar del 1 al 10.
+		int producto;
+		for(int num=1;num<=10;num++){
+			for(int i=1;i<=10;i++){
+				producto=num*i;
+				System.out.println(num+" x "+i+" = "+producto);
+			}
+			System.out.println();
+		}
+	}
+	
+	public static void numAleatorio(){
+		//Calcula un número entre el 1 y el 10 aleatoriamente, el usuario tendrá tres intentos para acertar.
+		Scanner sc=new Scanner (System.in);
+		int random=(int)Math.floor(Math.random()*10+1);
+		int num;
+		int cont=3;
+		do{
+			System.out.println("Introduzca un numero entre el 1 y el 10: ");
+			num=sc.nextInt();
+			cont --;
+			if(num==random){
+				System.out.println("Has acertado!");
+			}else{
+					System.out.println("Has fallado, te quedan "+cont+" intentos.");
+			}
+		
+		}while(!(num==random || cont==0));
+		
+		System.out.println("------------------ FIN PROGRAMA -------------------");
+		
+		
+		
+	}
 }
