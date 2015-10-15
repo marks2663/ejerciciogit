@@ -31,7 +31,7 @@ public class EjerciciosBuclesII {
 		for (int i=1;i<20;i+=2){
 			producto=producto*i;
 		}
-		System.out.println(producto);
+		System.out.println("Producto de los 10 primeros numeros impares: " +producto);
 	}
 
 	public static void factorial(){ 	//Pedir un número y calcular su factorial.
@@ -111,8 +111,14 @@ public class EjerciciosBuclesII {
 		int aprob=0;
 		Scanner sc=new Scanner (System.in);
 		for (int i=1;i<=6;i++){
-			System.out.println("Introduzca nota: ");
-			nota=sc.nextInt();
+			do{
+				System.out.println("Introduzca nota: ");
+				nota=sc.nextInt();
+				if (!(nota>=0&&nota<=10)){
+					System.out.println("Introduzca una nota valida (Entre 1 y 10):");
+				}
+			}while(!(nota>=0&&nota<=10));
+			
 			if (nota<5){
 				suspe++;
 			}
@@ -132,8 +138,14 @@ public class EjerciciosBuclesII {
 	
 		Scanner sc=new Scanner (System.in);
 		for (int i=1;i<=6;i++){
-			System.out.println("Introduzca nota: ");
-			nota=sc.nextInt();
+			do{
+				System.out.println("Introduzca nota: ");
+				nota=sc.nextInt();
+				if (!(nota>=0&&nota<=10)){
+					System.out.println("Introduzca una nota valida (Entre 1 y 10):");
+				}
+			}while(!(nota>=0&&nota<=10));
+			
 			if (nota<5){
 				suspe++;
 			}
