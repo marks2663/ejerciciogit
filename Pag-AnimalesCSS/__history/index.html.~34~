@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animales</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+	<div id="contenedor">
+		<div id="encabezado">
+			<h1>Animales</h1>
+		</div>
+		<div id="text">
+		<h3>Animales</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus vitae neque tincidunt ultricies. Integer viverra eleifend nisl, at ornare mauris pulvinar eu. Aliquam condimentum arcu vel ultricies pretium. Phasellus iaculis, libero id porta luctus, sem urna dignissim risus, in imperdiet purus felis vitae tellus. Phasellus iaculis ex eros, quis lobortis lorem elementum non. In ut ultrices augue, a vulputate nulla. Proin sed vestibulum sapien. Nullam vehicula suscipit lacus non ullamcorper. Phasellus posuere tincidunt orci, a vestibulum enim finibus ut. Nullam fermentum lacus at pulvinar blandit. Donec sagittis faucibus lorem eget volutpat. Cras sem nisi, faucibus eu urna at, tempus maximus massa. Nam efficitur mattis nibh, ac consequat lacus laoreet eu. Phasellus sit amet nibh mi. Proin nec est vitae nibh elementum venenatis a in justo. Donec at facilisis libero, id convallis massa.
+
+Sed eu consectetur sapien, eu posuere sapien. Praesent pharetra sit amet neque non iaculis. Aenean maximus magna id leo rhoncus, non vehicula ligula congue. Vivamus gravida magna non vestibulum efficitur. Pellentesque at sapien sed diam volutpat hendrerit. Cras iaculis auctor sapien, at aliquam elit fringilla in. Nulla non pellentesque libero. Aliquam erat volutpat. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus ultrices erat id risus scelerisque, in volutpat nisi aliquet. In finibus dignissim mauris nec ultrices. Nulla scelerisque libero non vehicula tristique. Sed elementum tortor dolor, at sagittis lectus convallis et. Integer consectetur lobortis scelerisque. Donec ac dui odio.
+
+In feugiat non neque sed placerat. </p>
+		</div>
+		<div id="menuDer">
+			<ul>
+				<a href="#">Caballo</a>
+				<br >
+				<a href="#">Husky</a>
+				<br >
+				<a href="#">Oso</a>
+				<br>
+				<a href="#">Elefante</a>
+			</ul>
+		</div>
+		<div id="noticias">
+			<h3>Los cuervos aprenden de la muerte</h3>
+			<p>Un estudio sostiene que estos animales observan a sus muertos para recopilar información sobre lugares que pueden ser una amenaza para su propia seguridad. <a href="#" id="alink">Saber m&aacute;s</a></p>
+			
+		</div>
+		<div id="menuAbajo">
+		
+		</div>
+		<div id="pie">
+		
+		</div>
+	</div>
+	
+</body>
+</html>
