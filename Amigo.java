@@ -47,4 +47,5 @@ public class Amigo {
 		public String getTlfno(){
 			return tlfno;
 		}
+		
 }

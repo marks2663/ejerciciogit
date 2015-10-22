@@ -1,30 +1,40 @@
 
 public class Asignatura {
-	public final int MAX_ALUM=25;
-	public String nombre;
-	public int horas;
-	public double notaMedia;
+
+	
+	private String nombre;
+	private int horas;
+	private static final int MAX_HORAS=400;
+	private static int CONT_ASIG=1;
+	private String cod="ZUB"+CONT_ASIG;
 	
 	public Asignatura(){
-		System.out.println("Objeto creado");
+		CONT_ASIG++;
 	}
 	
-	public Asignatura(String nombre){
-		this.nombre=nombre;
+	public void setCod(String cod){
+		this.cod=cod;
 	}
-	public Asignatura (String nombre, int horas){
-		this.horas=horas;
-		this.nombre=nombre;
+	public String getCod(){
+		return cod;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public int getHoras() {
+		return horas;
 		
 	}
-
-	public static void main(String[] args) {
-	// TODO Auto-generated method stub
-	Asignatura prog=new Asignatura("");
-	prog.nombre="Programación";
-	prog.horas=270;
-	System.out.println();
-	Asignatura ent=new Asignatura("Entornos");
-	Asignatura db=new Asignatura("DBDD",170);
-}
+	public void setHoras(int horas) {
+		this.horas = horas;
+		if(horas>=MAX_HORAS){
+			System.out.println("No se puede introducir más de 400 horas");
+		}else {
+			System.out.println("El numero de horas de la asignatura es: "+horas);
+		}
+	}
+		
 }
