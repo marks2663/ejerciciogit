@@ -1,0 +1,30 @@
+body{
+    padding: 1%;
+    margin:1%;
+}
+#izq{
+    float:left;
+    
+}
+#der{
+    float:right;
+    margin-top:1%;
+}
+#enc{
+    
+    float:left;
+}
+header{
+    margin-bottom:5%;
+  
+
+}
+.jumbotron{
+    background-color:#1abc9c !important;
+}
+.jumbotron h1 {
+    color: #ffffff;
+}
+.jumbotron small{
+    color:#555555;
+}
