@@ -49,7 +49,7 @@ public class ProgE5 {
 			
 			System.out.println("Introduzca el titulo de la cancion: ");
 			titulo =sc.nextLine();
-			cn.setTitulo(titulo);
+						cn.setTitulo(titulo);
 		}
 		private static void anadirAutor(CancionE5 cn){
 			Scanner sc=new Scanner(System.in);
@@ -63,6 +63,8 @@ public class ProgE5 {
 			String esti;
 			System.out.println("Introduzca Estilo: ");
 			esti=sc.nextLine();
+			String pri=esti.substring(0,1).toUpperCase();
+			esti=pri+esti.substring(1);
 			cn.addEstilo(esti);
 		}
 		

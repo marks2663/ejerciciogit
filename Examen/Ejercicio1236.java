@@ -106,7 +106,5 @@ public class Ejercicio1236 {
 			System.out.println("Has acertado 3 palabras!!!");
 		}
 			
-			
-	
 	}
 }
